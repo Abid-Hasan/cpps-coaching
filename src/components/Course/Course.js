@@ -1,13 +1,16 @@
 import React from "react";
+import { Card, Col } from "react-bootstrap";
 
 const Course = (props) => {
   const { name, fee, image } = props.course;
   return (
-    <div>
-      <img src={image} alt="" />
-      <h2>{name}</h2>
-      <p>Fee: {fee}</p>
-    </div>
+    <Card>
+      <Card.Img variant="top" src={image} />
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>Fee: &#2547;{fee} only</Card.Text>
+      </Card.Body>
+    </Card>
   );
 };
 

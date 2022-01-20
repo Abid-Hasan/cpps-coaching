@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { Card, Col, Row } from "react-bootstrap";
 import Course from "../Course/Course";
 
 const Courses = () => {
@@ -22,9 +23,12 @@ const Courses = () => {
           odit omnis quaerat cupiditate dolore. Reprehenderit optio quos sed
           nostrum dolorum quia voluptates maiores explicabo possimus.
         </p>
-        {courses.map((course) => (
-          <Course key={course.id} course={course} />
-        ))}
+
+        <Row xs={1} md={2} lg={3} className="g-4">
+          {courses.map((course) => (
+            <Course key={course.id} course={course} />
+          ))}
+        </Row>
       </div>
     </div>
   );
