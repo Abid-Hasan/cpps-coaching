@@ -26,10 +26,10 @@ const Header = () => {
                 className="nav-link"
                 to="/courses"
               >
-                Courses
+                Our courses
               </Nav.Link>
               <Nav.Link as={Link} eventKey="3" className="nav-link" to="/about">
-                About Us
+                About us
               </Nav.Link>
               <Nav.Link
                 as={Link}
@@ -37,7 +37,7 @@ const Header = () => {
                 className="nav-link"
                 to="/contact"
               >
-                Contact Us
+                Contact us
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -4,13 +4,18 @@ import { Card, Col } from "react-bootstrap";
 const Course = (props) => {
   const { name, fee, image } = props.course;
   return (
-    <Card>
-      <Card.Img variant="top" src={image} />
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>Fee: &#2547;{fee} only</Card.Text>
-      </Card.Body>
-    </Card>
+    <div class="col">
+      <div class="card h-100">
+        <img src={image} class="card-img-top border-bottom" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{name}</h5>
+          <p class="card-text"></p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Fee: &#2547;{fee} only</small>
+        </div>
+      </div>
+    </div>
   );
 };
 
